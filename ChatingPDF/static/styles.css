@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header{
+  background: linear-gradient(to right,blue,rgb(6, 106, 146),blue);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: montserrat;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.left-pane, .right-pane {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.left-pane {
+  width: 50%;
+  border-right: 2px solid #ccc;
+  background-color: #fff;
+}
+
+.right-pane {
+  width: 50%;
+  background-color: #111827;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.right-pane h2{
+  color: white;
+}
+.chat-box {
+  flex-grow: 1;
+  border: 1px solid grey;
+  background: rgba(255,255,255,0.3);
+  padding: 10px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+}
+input[type=text]{
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 25px;
+  border: 1px solid grey;
+  outline: none;
+}
+input[type=text]:focus{
+  border: none;
+  outline: none;
+}
+.chat-input button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.chat-input button:hover{
+  transform:translateY(-4px);
+}
+
+
+.msg {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  white-space: pre-wrap;
+}
+
+.user {
+  background-color: #111827;
+  align-self: flex-end;
+  border-radius: 20px;
+  color: white;
+}
+
+.bot {
+  background:blue;
+  align-self: flex-start;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+}
+
+.bot.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.status {
+  font-style: italic;
+  color: #777;
+  margin: 10px 0;
+}
+
+#thinking {
+  font-style: italic;
+  color: white;
+}
+
+#pdfInput::file-selector-button{
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #0ea5e9;
+  border-radius: 5px;
+  padding: 6px;
+  transition: all 0.3s ease;
+}
+
+#pdfInput::file-selector-button:hover{
+  transform: translateY(-4px);
+}
+
